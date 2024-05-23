@@ -20,6 +20,9 @@ class InMemorySessions(Sessions):
     def _get_session(self, session:str):
         return self.userdata.get(session)
 
+    def _update_session(self, data):
+        pass
+    
     def _remove_session(self, session:str):
         self.session_data.pop(session)
         self.userdata.pop(session)

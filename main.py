@@ -3,7 +3,7 @@
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
-from sessions import InMemorySessions
+from fastapi_sessions import InMemorySessions
 
 app = FastAPI()
 app.add_middleware(

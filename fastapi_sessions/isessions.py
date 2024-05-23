@@ -26,6 +26,9 @@ class Sessions:
             return True
         else:
             return False
+    
+    def update(self, data):
+        self._update_session(data)
 
     def _add_session(self, session:str):
         raise NotImplementedError()
@@ -33,6 +36,9 @@ class Sessions:
     def _get_session(self, session:str):
         raise NotImplementedError()
 
+    def _update_session(self, data):
+        raise NotImplementedError()
+    
     def _remove_session(self, session:str):
         raise NotImplementedError()
 
